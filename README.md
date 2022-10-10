@@ -1,1 +1,2 @@
-# CS361
+# cs361
+Code for cs361
