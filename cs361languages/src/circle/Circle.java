@@ -52,35 +52,43 @@ public class Circle extends GraphicObject {
 
 	@Override
 	void moveTo(int newX, int newY) {
-	}
+		
 
-	// TODO To complete
+			centerX= newX;
+			centerY= newY;
+		}
 	/**
 	 * @return the Circle with this EXACT format Circle: centerX = ... centerY = ... radius = ...
 	 */
 	@Override
+	
 	public String toString() {
-		return super.toString();
+		return " Circle: CenterX = " + centerX + " Center Y = "+ centerY + " radius = " + radius;
 	}
-
-	// TODO To complete
-	// TODO Be sure that you understand the difference between equals and ==
-	/**
-	 * @return true if this and obj have the same values for
-	 * centerX, centerY and radius
-	 */
 	@Override
 	public boolean equals(Object obj) {
-		return super.equals(obj);
-	}
 
-	// TODO To complete
-	/**
-	 * @return an exact copy of the Circle that is a new instance 
-	 */
-	// @Override
-	// protected Object clone() throws CloneNotSupportedException {
-	// return super.clone();
-	// }
+			
+			Circle otherCircle= (Circle) obj;
+			
+			if((centerX == otherCircle.centerX) && (centerY == otherCircle.centerY) && (radius == otherCircle.radius))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+			
+		}
+
+protected Object clone() throws CloneNotSupportedException {
+		
+		Circle clonedCircle= new Circle();
+		clonedCircle.centerX= centerX;
+		clonedCircle.centerY=centerY;
+	    clonedCircle.radius=radius;
+		return clonedCircle;
+	 }
 
 }
