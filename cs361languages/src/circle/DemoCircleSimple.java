@@ -30,7 +30,7 @@ public class DemoCircleSimple {
 		cc.draw(); 	// Drawing a ColoredCircle...
 					// draw method from ColoredCircle
 					// method resolution at run time
-
+  
 	}
 
-}
+} 

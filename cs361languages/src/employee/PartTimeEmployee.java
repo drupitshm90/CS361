@@ -25,7 +25,7 @@ public class PartTimeEmployee extends Employee {
 	}
 
 	public String getContractType() {
-		return "Contract";
+     	return "Contract";
 	}
 	
 	public void whoAmI() {
