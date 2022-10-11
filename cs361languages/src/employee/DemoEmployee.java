@@ -4,7 +4,7 @@
 package employee;
 
 /**
- * @author ADD YOUR NAME
+ * @author drupit sharma
  *
  */
 
@@ -41,7 +41,11 @@ public class DemoEmployee {
 		// if (CONDITION) {
 		// System.out.println("emp3 instance of part time employee"); // printed
 		// } else {
-		System.out.println("emp3 not instance of part time employee");
+		if (emp3 instanceof PartTimeEmployee) {
+			System.out.println("emp3 instance of part time employee"); // printed
+		} else {
+			System.out.println("emp3 not instance of part time employee");
+		}
 		// }
 
 		// Downcasting 1
